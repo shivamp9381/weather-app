@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
 import axios from 'axios';
 
-export const WEATHER_API_KEY = '7dfd2fa429e1db3fb36c02f3199edbac';
+export const WEATHER_API_KEY = 'aeb1348e2d526faac7f7b4cc52b60e48';
 
 export default function WeatherDisplay() {
   const inputLocation = useRef(null);

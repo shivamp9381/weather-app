@@ -9,7 +9,7 @@ import Row from 'react-bootstrap/Row';
 import x from '../images/x.svg';
 import update from '../images/refresh.svg';
 
-export const WEATHER_API_KEY = '7dfd2fa429e1db3fb36c02f3199edbac';
+export const WEATHER_API_KEY = 'aeb1348e2d526faac7f7b4cc52b60e48';
 
 export default function CityTiles(props) {
   const { location } = props;
@@ -120,9 +120,9 @@ export default function CityTiles(props) {
         <Card
           id={cityprops.city.id}
           className="mt-1 mb-1 my--card"
-          text="light"
+          text="dark"
           border="light"
-          style={{ width: '16rem' }}
+          style={{ width: '20rem' }}
         >
           <Card.Body>
             <Card.Title className="bold m-auto spreadout" as="h1">

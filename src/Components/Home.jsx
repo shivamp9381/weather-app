@@ -6,7 +6,7 @@ import '../index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import refresh from '../images/refresh.svg';
 
-export const WEATHER_API_KEY = '7dfd2fa429e1db3fb36c02f3199edbac';
+export const WEATHER_API_KEY = "aeb1348e2d526faac7f7b4cc52b60e48";
 
 export default function Home() {
   const [data, setData] = useState([]);
@@ -180,13 +180,13 @@ export default function Home() {
     } else {
       return {
         bgColor: data.main ? 
-          (getTempCategory() === 'cold' ? 'linear-gradient(to bottom, #a8c0ff, #3f4c6b)' : 
+          (getTempCategory() === 'cold' ? 'linear-gradient(to bottom, #a8c0ff, #6b3f4c)' : 
           getTempCategory() === 'cool' ? 'linear-gradient(to bottom, #89f7fe, #66a6ff)' :
           getTempCategory() === 'warm' ? 'linear-gradient(to bottom, #ffd194, #ff9a44)' :
           'linear-gradient(to bottom, #ff7e5f, #feb47b)') : 
           'linear-gradient(to bottom, #6a11cb, #2575fc)',
         cardBg: "rgba(255, 255, 255, 0.85)",
-        textColor: "#333",
+        textColor: "#6b3f4c",
         detailBg: "rgba(26, 115, 232, 0.1)",
         mutedText: "#6c757d",
         borderColor: "rgba(255, 255, 255, 0.18)"
@@ -207,7 +207,7 @@ export default function Home() {
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'space-between',
-        transition: 'all 0.3s ease'
+        transition: 'all 0.5s ease'
       }}>
         <div className="container py-4 px-3" style={{
           backgroundColor: themeStyles.cardBg,
@@ -529,7 +529,7 @@ export default function Home() {
           transition: 'all 0.3s ease'
         }}>
           <p>
-            Made with <span style={{ color: isDarkMode ? "#ff8a80" : "#ff6b6b" }}>❤</span> by Swapnil Raj
+            Made with <span style={{ color: isDarkMode ? "#ff8a80" : "#ff6b6b" }}>❤</span> by Shivam
           </p>
         </footer>
       </div>
